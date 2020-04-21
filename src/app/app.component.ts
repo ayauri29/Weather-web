@@ -10,7 +10,7 @@ import { GeolocationService } from './services/geolocation.service';
 export class AppComponent {
   title = 'weather';
 
-  constructor(private geolocationService : GeolocationService) {}
+  constructor(public geolocationService : GeolocationService) {}
   ngOnInit() {
     // this.geolocationService.requestGeolocation();
   }

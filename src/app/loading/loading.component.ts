@@ -13,7 +13,7 @@ export class LoadingComponent implements OnInit {
   elements : string [] = this._elements;
 
 
-  constructor(private currentWeatherService : CurrentWeatherService) { }
+  constructor(public currentWeatherService : CurrentWeatherService) { }
 
   ngOnInit(): void {
     this.set();
